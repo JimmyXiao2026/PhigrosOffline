@@ -1,9 +1,9 @@
 # --- Android / Gradle build outputs ---
-PhiOfflineApp/.gradle/
-PhiOfflineApp/.kotlin/
-PhiOfflineApp/build/
-PhiOfflineApp/app/build/
-PhiOfflineApp/local.properties
+.gradle/
+.kotlin/
+build/
+app/build/
+local.properties
 *.apk
 *.aab
 

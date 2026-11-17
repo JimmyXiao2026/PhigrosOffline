@@ -41,11 +41,11 @@
 
 ## 从源码构建
 - 环境：JDK 17、Android SDK 35（compileSdk 35 / minSdk 26 / targetSdk 34）、Gradle 8.13（仓库内已带 Wrapper）。
-- 在 `PhiOfflineApp/` 目录下执行：
+- 在仓库根目录下执行：
   - Windows：`gradlew.bat assembleRelease`
   - macOS / Linux：`./gradlew assembleRelease`
-- 产物：`PhiOfflineApp/app/build/outputs/apk/release/app-release.apk`。
-- **签名**：Release 签名信息不入库。在 `PhiOfflineApp/local.properties`（已被 .gitignore 忽略）中配置，或使用同名环境变量：
+- 产物：`app/build/outputs/apk/release/app-release.apk`。
+- **签名**：Release 签名信息不入库。在 `local.properties`（已被 .gitignore 忽略）中配置，或使用同名环境变量：
   - `keystore.file`、`keystore.password`、`keystore.alias`、`keystore.keyPassword`
   - 未配置签名时，Release 包回退使用默认 debug 签名；自行打包请使用自己的密钥库。
 

@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "PhiOfflineApp"
+rootProject.name = "PhigrosOffline"
 include(":app")
