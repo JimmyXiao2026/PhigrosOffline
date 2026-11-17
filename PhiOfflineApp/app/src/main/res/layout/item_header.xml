@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="34dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="2dp"
+    android:background="@drawable/bg_header"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <!-- 左侧黄色射线，向标题方向渐短 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:paddingEnd="10dp">
+
+        <View android:layout_width="28dp" android:layout_height="12dp" android:background="#FFF700" />
+        <View android:layout_width="18dp" android:layout_height="12dp" android:layout_marginStart="3dp" android:background="#FFF700" />
+        <View android:layout_width="11dp" android:layout_height="12dp" android:layout_marginStart="3dp" android:background="#FFF700" />
+        <View android:layout_width="7dp" android:layout_height="12dp" android:layout_marginStart="3dp" android:background="#FFF700" />
+        <View android:layout_width="5dp" android:layout_height="12dp" android:layout_marginStart="3dp" android:background="#FFF700" />
+        <View android:layout_width="3dp" android:layout_height="12dp" android:layout_marginStart="3dp" android:background="#FFF700" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aldrich"
+        android:fontStyle="italic"
+        android:letterSpacing="0.15"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <!-- 右侧黄色射线，向标题方向渐短 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="start"
+        android:orientation="horizontal"
+        android:paddingStart="10dp">
+
+        <View android:layout_width="3dp" android:layout_height="12dp" android:background="#FFF700" />
+        <View android:layout_width="5dp" android:layout_height="12dp" android:layout_marginStart="3dp" android:background="#FFF700" />
+        <View android:layout_width="7dp" android:layout_height="12dp" android:layout_marginStart="3dp" android:background="#FFF700" />
+        <View android:layout_width="11dp" android:layout_height="12dp" android:layout_marginStart="3dp" android:background="#FFF700" />
+        <View android:layout_width="18dp" android:layout_height="12dp" android:layout_marginStart="3dp" android:background="#FFF700" />
+        <View android:layout_width="28dp" android:layout_height="12dp" android:layout_marginStart="3dp" android:background="#FFF700" />
+    </LinearLayout>
+</LinearLayout>

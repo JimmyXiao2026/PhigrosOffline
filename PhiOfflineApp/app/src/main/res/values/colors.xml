@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- phi-plugin 难度色 -->
+    <color name="ez">#7AE07A</color>
+    <color name="hd">#009DFF</color>
+    <color name="in">#FF6161</color>
+    <color name="at">#9C9C9C</color>
+    <color name="legacy">#7700FF</color>
+
+    <!-- 评级 / 强调色 -->
+    <color name="phi">#FFF700</color>
+    <color name="fc">#00F0D1</color>
+    <color name="title_glow">#00BAFF</color>
+
+    <!-- 界面 -->
+    <color name="screen_bg">#12212C</color>
+    <color name="text_primary">#EEF6FA</color>
+    <color name="text_sub">#A2B7C5</color>
+    <color name="card_bg">#5400151D</color>
+    <color name="num_bg">#CC4A7AA1</color>
+    <color name="skybar">#6987CEEB</color>
+    <color name="ic_launcher_background">#0E1424</color>
+</resources>

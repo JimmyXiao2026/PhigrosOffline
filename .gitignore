@@ -1,0 +1,17 @@
+# --- Android / Gradle build outputs ---
+PhiOfflineApp/.gradle/
+PhiOfflineApp/.kotlin/
+PhiOfflineApp/build/
+PhiOfflineApp/app/build/
+PhiOfflineApp/local.properties
+*.apk
+*.aab
+
+# --- IDE ---
+.idea/
+*.iml
+.vscode/
+
+# --- Local temp, reference dumps and personal save data (never commit) ---
+临时文件/
+临时文件phi-rank-query-src/

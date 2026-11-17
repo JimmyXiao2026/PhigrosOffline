@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_radius">14dp</dimen>
+    <dimen name="cover_w">88dp</dimen>
+    <dimen name="cover_h">50dp</dimen>
+    <dimen name="rating_icon_w">46dp</dimen>
+    <dimen name="rating_icon_h">34dp</dimen>
+</resources>

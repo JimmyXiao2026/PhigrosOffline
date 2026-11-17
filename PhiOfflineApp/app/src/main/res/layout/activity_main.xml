@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen">
+
+    <!-- 背景宣传图：cover 铺满，不拉伸变形 -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.22"
+        android:contentDescription=""
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_phigros" />
+
+    <!-- 暗色遮罩，压暗背景水印、保证列表可读 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E60A141C" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="12dp">
+
+        <!-- 第一行：标题 + RKS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/aldrich"
+                android:letterSpacing="0.12"
+                android:shadowColor="@color/title_glow"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="12"
+                android:text="PHI RANK QUERY"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aldrich"
+                android:letterSpacing="0.15"
+                android:layout_marginStart="12dp"
+                android:text="RKS"
+                android:textColor="@color/text_sub"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/rks_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:fontFamily="@font/aldrich"
+                android:text="—"
+                android:textColor="@color/phi"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- 第二行：状态 / 时间 / 计数 / 分析按钮 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/status_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:fontFamily="@font/phi"
+                android:singleLine="true"
+                android:text="准备就绪：需要 Shizuku 读取存档"
+                android:textColor="@color/text_sub"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/phi"
+                android:singleLine="true"
+                android:text="存档时间：—"
+                android:textColor="@color/text_sub"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/count_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/phi"
+                android:singleLine="true"
+                android:text="0 首曲目"
+                android:textColor="@color/text_sub"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/btn_analyze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_button"
+                android:fontFamily="@font/aldrich"
+                android:paddingHorizontal="14dp"
+                android:paddingVertical="7dp"
+                android:text="分析存档"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- 视图切换 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_b30"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tab_selector"
+                android:fontFamily="@font/aldrich"
+                android:gravity="center"
+                android:text="B30"
+                android:textColor="@drawable/tab_text_selector"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btn_x"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tab_selector"
+                android:fontFamily="@font/aldrich"
+                android:gravity="center"
+                android:text="X30"
+                android:textColor="@drawable/tab_text_selector"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btn_over"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tab_selector"
+                android:fontFamily="@font/aldrich"
+                android:gravity="center"
+                android:text="越30"
+                android:textColor="@drawable/tab_text_selector"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btn_all"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tab_selector"
+                android:fontFamily="@font/aldrich"
+                android:gravity="center"
+                android:text="所有成绩"
+                android:textColor="@drawable/tab_text_selector"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingBottom="16dp"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+</FrameLayout>

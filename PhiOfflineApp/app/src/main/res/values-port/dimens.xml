@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cover_w">64dp</dimen>
+    <dimen name="cover_h">36dp</dimen>
+    <dimen name="rating_icon_w">36dp</dimen>
+    <dimen name="rating_icon_h">27dp</dimen>
+</resources>
